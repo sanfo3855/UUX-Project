@@ -27,6 +27,9 @@
 ## Generated if empty string is given at "Please type another file name for output:"
 .pdf
 
+##
+*.DS_Store
+
 ## Bibliography auxiliary files (bibtex/biblatex/biber):
 *.bbl
 *.bcf
