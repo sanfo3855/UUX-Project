@@ -250,7 +250,7 @@ Sara è una ragazza di 16 anni che frequenta l'istituto di moda. È  da sempre a
     \includegraphics[width=0.3\textwidth]{"Images Latex/Personas/Emanuele"}
 \end{wrapfigure}
 \textbf{Demografia}\\
-\indent \textbf{Età}: 41 anni\\
+\indent \textbf{Età}: 48 anni\\
 \indent \textbf{Residenza}: Torino, Piemonte\\
 \indent \textbf{Famiglia}: Moglie e due figli\\
 \indent \textbf{Occupazione}: Amministratore delegato\\
@@ -461,19 +461,40 @@ In generale dopo la prima analisi possiamo dire che il sito presenta un design p
 \subsection{Analisi Diretta: Sistema vs Linee Guida}
 Durante l'analisi diretta, il sito non mostra evidenti problemi gravi di usabilità secondo le euristiche applicate. Comunque alcune cose potevano venir sviluppate meglio:
 \begin{itemize}
-  \item Alcuni termini utilizzati relativi ai prodotti o filtri sono specifici del dominio e forse potrebbero non essere chiari per un utente medio \\(Euristica non rispettata: 2)
+  \item Alcuni termini utilizzati relativi ai prodotti o filtri sono specifici del dominio e forse potrebbero non essere chiari per un utente medio.\\
+  (Euristica non rispettata: 2)
   \item Nella barra a lato sono presenti due sottomenù entrambi chiamati Collezioni, non si capisce qual'è la differenza tra le due.\\
   (Euristica non rispettata: 8)
   \item Non si riesce a capire facilmente dove è possibile registrare un account per fare acquisti sul sito. Inoltre la registrazione è avvenuta quasi per puro caso sentendosi quasi persi in questa fase.\\
   (Euristiche non rispettate: 1, 5)
-  \item l'impostazione del filtro per negozio non funziona bene. Cliccando su "Vicino a Me" non mostra neanche un risultato. Vi è anche una discrepanza tra impostazione tramite Nome di Città e CAP: inserendo un CAP e poi una città, nel momento in cui il CAP si riferisce a un luogo più distante dallo store rispetto alla città inserita, nel caso del CAP da un risultato mentre con la città no.
+  \item l'impostazione del filtro per negozio non funziona bene. Cliccando su "Vicino a Me" non mostra neanche un risultato. Vi è anche una discrepanza tra impostazione tramite Nome di Città e CAP: inserendo un CAP e poi una città, nel momento in cui il CAP si riferisce a un luogo più distante dallo store rispetto alla città inserita, nel caso del CAP da un risultato mentre con la città no.\\
   (Euristiche non rispettate: 4, 9, 5)
-  \item Il footer del sito presenta troppe informazioni scritte in poco spazio che spingono l'utente ad evitarlo, nonostante ci siano alcuni link utili quali: assistenza ordini, resi online, stato dell'ordine.
+  \item Il footer del sito presenta troppe informazioni scritte in poco spazio che spingono l'utente ad evitarlo, nonostante ci siano alcuni link utili quali: assistenza ordini, resi online, stato dell'ordine.\\
   (Euristiche non rispettate: 8, 6)
-  \item In fase di aggiunta al carrello, il sito richiede di selezionare taglia e vestibilità. L'errore riportato dalla mancata selezione della vestibilità non è chiaro, in quanto mostra un errore relativo alla mancata selezione della taglia.
+  \item In fase di aggiunta al carrello, il sito richiede di selezionare taglia e vestibilità. L'errore riportato dalla mancata selezione della vestibilità non è chiaro, in quanto mostra un errore relativo alla mancata selezione della taglia.\\
   (Euristiche non rispettate: 9)
-  \item In fase di pagamento, con accesso all'account effettuato, compaiono alcune scritte in inglese anche se la lingua selezionata è l'italiano. Si può intuire a fatica che si tratta di un buono sconto.
+  \item In fase di pagamento, con accesso all'account effettuato, compaiono alcune scritte in inglese anche se la lingua selezionata è l'italiano. Si può intuire a fatica che si tratta di un buono sconto.\\
   (Euristiche non rispettate: 2)
+\end{itemize}
+\subsection{Analisi inversa: Linee Guida vs Sistema}
+Eseguendo l'analisi inversa sono state prese le euristiche di Nielsen sopra citate e sono state confrontate con il sistema. Di seguito sono riportate le euristiche che non sono state rispettate dal sistema. I problemi riscontrati nell'analisi diretta sono stati omessi.
+\begin{itemize}
+  \item \textbf{Euristica 3} - Il sistema non pone l'utente nella condizione di muoversi liberamente, poichè dopo aver selezionato un articolo non vi è un modo semplice e intuitivo per poter tornare alla sezione precedente. L'unico modo possibile è attraverso un piccolo menu orizzontale e poco visibile.
+  \item \textbf{Euristica 10} - Il sito non presenta alcuna forma di documentazione.
+\end{itemize}
+\section{User testing}
+\subsection{Protocollo di testing}
+\begin{itemize}
+  \item \textbf{Metodo di testing}: Discount usability test
+  \item \textbf{Metodologia di testing}: Thinking Aloud
+  \item \textbf{Elenco dei task da testare}: Sono stati selezionati più task da quelli offerti dal sito che messi insieme permettono di completare un'operazione. MANCANTE
+  \item \textbf{Soggetti}:
+  \begin{itemize}
+    \item Giorgio, operaio di 24 anni, mediamente pratico con la tecnologia;
+    \item Michela, parrucchiera di 42 anni, poco affine alla tecnologia;
+    \item Stefano, impiegato di 56 anni, abile nell'utilizzo della tecnologia.
+  \end{itemize}
+  \item \textbf{Descrizione dei risultati attesi}: per effettuare una stima dei risultati otteuti sono stati applicati i criteri EEE (Efficacia, Efficienza, Emozioni); per efficacia s'intede l'accuratezza con cui gli utenti riescono a raggiungere determinati obiettivi, l'efficienza misura il tempo minimo richiesto per portare a termine un task in maniera efficace, mentre l'emozione indica il comfort e l'atteggiamento positivo dell'utente nell'utilizzo del sistema.
 \end{itemize}
 \chapter{Proposta di design}
 \chapter{Valutazione del design proposto}
