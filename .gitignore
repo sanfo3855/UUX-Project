@@ -29,7 +29,8 @@
 
 ##
 *.DS_Store
-
+~$*.xlsx
+.~lock.*.xlsx#
 ## Bibliography auxiliary files (bibtex/biblatex/biber):
 *.bbl
 *.bcf
