@@ -549,6 +549,37 @@ Dato che non è possibile migliorare iterativamente questo sito sotto esame, abb
   Di seguito è possibile visualizzare il grafico relativo alla curva d'urgenza. Gli errori presenti (differenziati dai vari simboli) sono stati riportati in un grafico bidimensionale "impatto per frequenza" e fanno riferimento alla tabella della pagina precedente.\\\\
   \includegraphics[width=1\textwidth]{"Project Management Sources/CurvaUrgenza"}
 \chapter{Proposta di design}
+Dato che il nostro obiettivo è soddisfare i bisogni (goal) degli utenti, abbiamo impostato il design seguendo un approccio Goal-oriented. Questo approccio permette di ottimizzare lo sviluppo di un sistema usabile, elimando task irrilevanti nel raggiungimento di obiettivi per gli utenti.\\
+Si è deciso di utilizzare il modello CAO=S, che da la possibilità di sviluppare un sistema usabile, minimzzando i costi e gli errori più comuni.\\
+\section{Architettura dell'Informazione}
+Per strutturare l'informazioni all'interno del nostro sistema abbiamo adottato un approccio dall'alto verso il basso (\textit{Top-Down}).\\
+Questo approccio utilizza specifiche domande per analizzare alcuni concetti e aspetti importanti per il nostro sito con l'obiettivo di individuare il modo migliore per comunicare con l'utente permettendo al progettista di adottare una strategia al fine di creare un'interfaccia dove sia semplice e immediato trovare ciò che si cerca o il modo per arrivarci.\\\\\\
+Elenchiamo di seguito le domande con considerazione legate al portale che si vuole progettare:
+\begin{enumerate}
+  \item Dove sono?\\
+  In ogni situazione l'utente deve sapere dove si trova, cioè deve sapere che sta navigando all'interno del nostro sito. Tale domanda è soddisfatta posizionando in alto una barra di navigazione con "Logo" e "Nome del sito", fissando tale barra in alto anche nal caso in cui si effettui uno scrolling della pagina. Sempre nella navbar sarà ben evidente in che sezione ci si trova o nel caso i filtri della ricerca.
+  \item So cosa sto cercando? Nel caso so dove trovarlo?\\
+  Ogni utente deve poter trovare ciò che cerca facilmente in ogni pagina del sito. Questa necessità è soddisfatta da filtri preimpostati in modo chiaro e un campo di ricerca sempre visibile nella barra di navigazione per effettuare ricerche con parole chiave.
+  \item Come posso esplorare il sito?\\
+  Questo sito ha a disposizione innumerevoli capi d'abbigliamento e bisogna fornire un modo semplice con cui esplorare il sito. Virtualmente la pagina mostrata sarà sempre la stessa, ma cambieranno i prodotti. Per questo motivo vi sarà una barra laterale sempre visibile con dei filtri preimpostati per visualizzare sottogruppi di prodotti mostrati e anche un modo per tornare indietro. Si potranno impostare anche filtri propri.\\
+  Durante la visualizzazione di un prodotto comparirà un overlay sulla pagina attuale con dettagli del prodotto, mantenendo l'interfaccia e i prodotti mostrati sotto in dissolvenza. Si potrà tornare facilmente indietro.
+  \item Cosa rende questo sito unico?\\
+  Essendo un sito di ecommerce, la sua unicità principale sono i prodotti in vendita. Il risalto principale viene dato alle ultime novità.
+  \item Cos'è questo sito e cosa posso trovarci?\\
+  Un utente che si trova su questo sito deve poter capire di cosa tratta e che cosa può trovarci. Perciò il sito in esame mostrerà un home page con le ultime novità uscite e collegamenti alle principali collezioni in tendenza in questo periodo, in modo da fornire un rapido accesso a tutto ciò che il sito ha da offire ad un utente conscio delle ultime tendenze, ma anche ad uno meno informato sul mondo della moda.
+  \item Cosa sta succedendo in questo periodo?\\
+  Su un sito potrebbe essere necessario mostrare le informazioni relative all'argomento trattato esterne ad esso. Essendo però queto un sito di e-commerce, il fulcro è mostrare e vendere prodotti e una sezione con le ultime news sulla moda andrebbe a distogliere l'utente da ciò che veramente vogliamo che faccia sul sito: visualizzare e comprare prodotti. È comunque presente una sezione novità e tendenze per mostrare i prodotti più in voga del momento.
+  \item Danno peso alla mia opinione?\\
+  Per un sito di e-commerce è di vitale importanza l'opinione dei propri utenti, e quindi al di sotto di ogni prodotto sarà possibile visualizzare una sezione "Commenti" relativi con un voto da 1 a 5 sul prodotto acquistato.\\
+  Sarà presente anche nel footer una sezione feedback sul sito dove si potranno dare riscontri su eventuali problemi tecnici.
+  \item Come posso ricevere assistenza da un essere umano?\\
+  Potrebbe essere utile per un utente parlare direttamente con un essere umano per avere informazioni o assistenza in caso di problemi.\\
+  Sarà quindi presente in ogni pagina un bottone in basso a sinistra con cui poter avviare una chat con un assistente umano.\\
+  Dato che il sito rappresenta online una catena di abbigliamento e moda, sarà possibile trovare anche i numeri dei negozi suddivisi per regione nel footer del sito, dato che sono informazioni secondarie e poco usate.
+  \item C'è un indirizzo fisico dell'organizzazione?\\
+  Riprendendo la domanda precedente, dato che il sito rappresenta online una catena distribuita sul territorio, sono presenti delle sedi fisiche. Questa informazione non è particolarmente importante, e infatti viene abbianata nel footer ai numeri di telefono delle sedi, sempre suddivise per regione.
+\end{enumerate}
+
 \chapter{Valutazione del design proposto}
 \chapter{Conclusioni}
 \chapter{Allegati}
