@@ -309,6 +309,8 @@ Di seguito tutti i task possibili in LittleWomen:
   \item \textbf{Task 24} - Avviare procedura per effettuare un reso
   \item \textbf{Task 25} - Modificare la lingua del sito
   \item \textbf{Task 26} - Inserire feedback e recensioni
+  \item \textbf{Task 26} - Trovare un negozio fisico
+
 \end{itemize}
 \section{Scenari}
 \subsection*{Giorgia}
@@ -557,21 +559,23 @@ Il modello CAO=S è un modello di progettazione goal-oriented. È basato sullo s
 \end{itemize}
 Di seguito vengono analizzati nel dettaglio ogni componente del modello.
 \subsection{Concetti}
-I concetti rappresentano il tipo di informazione gestita dall'applicazione e ciò non si identifica nelle strutture dati ma bensì nel modo in cui gli utenti percepiscono e comprendono l'informazione memorizzata nella struttura dati. Proprio per questo è importante che il sistema riesca ad evitare i problemi di standardizzazione, adottanto un lessico che sia comprensibile a tutti. Per questo si è deciso di utilizzare i seguenti concetti all'interno del sito in modo da evitare fraintendimenti.
+I concetti rappresentano il tipo di informazione gestita dall'applicazione e ciò non si identifica nelle strutture dati ma bensì nel modo in cui gli utenti percepiscono e comprendono l'informazione memorizzata nella struttura dati. Proprio per questo è importante che il sistema riesca ad evitare i problemi di standardizzazione, adottando un lessico che sia comprensibile a tutti. Per questo si è deciso di utilizzare i seguenti concetti all'interno del sito in modo da evitare fraintendimenti.
 \begin{itemize}
-  \item Novità
-  \item Pezzi di sotto
-  \item Abbinamenti
-  \item T-shirt con stampa
+  \item Profilo (young e adulto)
   \item Carrello
-  \item Accessori
-  \item Login e Registrazione
-  \item Trova un negozio
+  \item Articolo
+  \item Associazione account
+  \item Pagamento
+  \item Reso
+  \item Spedizione
+  \item Preferiti
+  \item Assistenza
+  \item Ordine
 \end{itemize}
-Questi appena descritti sono in principali sostantivi utilizzati nel sito che non richiedono una conoscenza approfondita del dominio applicativo. Ad esempio è stato scelto di differenziare "T-shirt con stampa" piuttosto che "Graphic tees" e "Registrazione" piuttosto che "Entra a far parte del nostro club".
+Questi appena descritti sono in principali sostantivi utilizzati nel sito che non richiedono una conoscenza approfondita del dominio applicativo. Le uniche ambiguità presenti, in particolare differenze lessicali, si hanno con il concetti di \textit{Profilo} sostituibile con il termine account; il concetto di \textit{Articolo} è equivalente a prodotto; infine il concetto di \textit{Assistenza} racchiude tutte le informazioni relative all'aiuto dell'utente, come contatti e FAQ.
 \subsection{Attori}
 Il secondo componente del modello CAO=S è rappresentato dagli Attori. In generale gli attori sono le categorie di utenti che agiscono sull'interfaccia dell'applicazione, manipolando le strutture dati per completare i loro task. Gli attori quindi sono caratterizzati da ruoli che ne determinano i task e quindi le operazioni. Nel nostro sistema, in conformità con il modello CAO=S verranno analizzati gli attori sia con una breve descrizione della loro persona e sia attraverso il racconto di uno scenario in cui viene esplicitato il suo obbiettivo accompagnato da un diagramma di strategia che analizza le capacità e competenze di ciascun attore su una scala da 1 a 5 (1 valore basso, 5 valore molto alto).\\
-
+\newpage
 \subsubsection{Giorgia}
 \rule{\textwidth}{0.5pt}
 \begin{wrapfigure}{r}{0.5\textwidth}
@@ -636,6 +640,30 @@ Abita a Torino, ed è il padre di Sara che ha 16 anni oltre che di Matteo, che h
 Antonella è la mamma di Giorgia, e di Massimiliano, che ha 20 anni. È una professoressa di inglese nelle scuole superiori, ma nel passato ha lavorato come intermediaria linguistica per un'importante azienda di moda estera. Proprio per questo conosce il mondo della moda e spesso affianca sua figlia Giorgia nella ricerca di capi d'abbigliamento dai gusti raffinati che rispettano comunque l'età di sua figlia. Antonella non è esperta di tecnologia; la sua conoscenza si limita ad effettuare ricerche su Google e a controllare la figlia nell'effettuare acquisti online.
 \begin{center}
   \includegraphics[width=0.6\textwidth]{"Images Latex/Personas/Antonella45"}
+\end{center}
+\newpage
+\subsection{Operazioni}
+Le operazioni costituiscono il terzo componente del modello CAO=S. Quest'ultime sono azioni sull'interfaccia a cui corrispondono manipolazioni sui concetti. Ogni operazione agisce su una o più istanza del concetto, direttamente o indirettamente, in maniera definitiva o temporanea. Le operazioni sono esattamente di quattro tipi (le quali si basano su modello CRUD e REST):\\
+\begin{itemize}
+  \item \textit{Creazione}: generazione di una o più istanze di un concetto nello stato iniziale;
+  \item \textit{Lettura}: visualizzazione di una o più istanze del concetto;
+  \item \textit{Modifica}: aggiornamento di una o più istanze del concetto, senza creare nuove istanze;
+  \item \textit{Eliminazione}: rimozione di una o più entità dal sistema.
+\end{itemize}
+Caratteristica comune a tutti i concetti riguarda l'operazione di vista, di cui sono esenti però l'account delle ragazze nei concetti di pagamento, reso  e associazione account. Di seguito è possibile visualizzare le operazioni ammissibili per le due categorie di utenti.\\\\
+\includegraphics[width=1\textwidth]{"Project Management Sources/OperazioniAdulto"}
+\includegraphics[width=1\textwidth]{"Project Management Sources/OperazioniRagazze"}
+\subsection{Strutture}
+Le strutture rappresentano il modo in cui il progettista concretizza le idee di operazioni su concetti da parte degli attori sotto forma di organzizzazioni concrete del programma.\\
+Possiamo differenziare tre tipi di strutture:
+\begin{itemize}
+\item \textit{Vista}, ovvero la presentazione dei concetti con modelli di schermate;
+\item \textit{Navigazione}, ovvero il meccanismo con cui si passa da una view all'altra e i comandi per passare dalla visualizzazione iniziale all'esecuzione del determinato comando;
+\item \textit{Strutture dati}, le quali permettono di memorizzare in maniera persistente le informazioni che caratterizzano i concetti presentati all'utente.
+\end{itemize}
+Attraverso la costruzione di una tabella tridimensionale, richiesta dal modello CAO=S, è possibile esplicitare il modo in cui l'attore deve svolgere l'operazione presente sull'asse delle ascisse per soddisfare il relativo concetto che si trova nell'asse delle ordinate.\\
+\begin{center}
+  \includegraphics[width=1\textwidth]{"Project Management Sources/StrutturaAdulto"}
 \end{center}
 \chapter{Valutazione del design proposto}
 \chapter{Conclusioni}
