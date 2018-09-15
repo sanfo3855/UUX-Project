@@ -732,7 +732,88 @@ La commercialista vuole acquistare una felpa per la propria figlia. Accede a Lit
   \item Confermare l'acquisto.
 \end{enumerate}
 \subsubsection{Storia}
-La commercialista deve confermare l'acquisto relativo alla felpa precedentemente aggiunta al carrello. Così dalla homepage si reca nel carrello e clicca su acquista. Al clic su acquista viene avviata la procedura di completamento dell'acquisto, che vede come primo passo l'inserimento dell'indirizzo di spedizione. Avendolo già preimpostato in precedenza conferma l'indirizzo suggeritole e procede alla sezione successiva cliccando su paga ora. In questa fase deve scegliere se inserire i dati della propria carta di credito o procedere all'acquisto tramite Paypal. La commericalista sceglie di pagare con la propria carta, così inserisce i suoi dati personali e completa l'acquisto cliccando su paga. L'acquisto è confermato dalla schermata con scritto che il sistema ha preso in carico l'acquisto e verrà processato e spedito secondo la tipologia di spedizione selezionata.
+La commercialista deve confermare l'acquisto relativo alla felpa precedentemente aggiunta al carrello. Così dalla homepage si reca nel carrello e clicca su acquista. Al clic su acquista viene avviata la procedura di completamento dell'acquisto, che vede come primo passo l'inserimento dell'indirizzo di spedizione. Avendolo già preimpostato in precedenza conferma l'indirizzo suggeritole e procede alla sezione successiva cliccando su paga ora. In questa fase deve scegliere se inserire i dati della propria carta di credito o procedere all'acquisto tramite Paypal. La commericalista sceglie di pagare con la propria carta, così inserisce i suoi dati personali e completa l'acquisto cliccando su paga. L'acquisto è confermato dalla schermata con scritto che il sistema ha preso in carico l'acquisto e verrà processato e spedito secondo la tipologia di spedizione selezionata.\\\\
+Il Cognitive walkthrough ha portato all'aggiunta del salvataggio dei dati di pagamento per garantire una maggior rapidità e sicurezza nel completare la fase di acquisto.
+\section{User testing}
+\subsection{Protocollo di testing}
+Il protocollo di testing adottato per valutare il design proposto è il Discount usability testing, proposto da Nielsen nel 1994.\\
+Il test è stato somministrato a quattro soggetti interessati all'utilizzo della piattaforma, rispettivamente due ragazze e due genitori ai quali è stato chiesto di completare 3 task ciascuno.\\
+I test non verranno svolti in contemporanea per poter permettere una modifica del prototipo; infatti gli errori riportati dal primo utente al di sopra della soglia della curva d'urgenza verranno immediatamente risolti e al secondo utente verrà fornito il prototipo aggiornato.\vspace{5mm}
+\\\vspace{5mm}
+\textbf{Metodo di testing}:Discount usability test
+\\\vspace{5mm}
+\textbf{Metodologia di testing}: Thinking Aloud
+\\\vspace{5mm}
+\textbf{Lista dei task}\\
+Adulti:
+  \begin{itemize}
+    \item \underline{\textit{Task 1}}: Effettuare la registrazione
+    \item \underline{\textit{Task 2}}: Effettuare un reso
+    \item \underline{\textit{Task 3}}: Connettere il proprio account ad account young
+  \end{itemize}
+Ragazze:
+    \begin{itemize}
+      \item \underline{\textit{Task 1}}: Effettuare la registrazione
+      \item \underline{\textit{Task 2}}: Trovare un negozio
+      \item \underline{\textit{Task 3}}: Ricercare un prodotto e aggiungerlo al carrello
+    \end{itemize}
+  \textbf{Soggetti}:
+  \begin{itemize}
+    \item Ilaria, studentessa di 14 anni, pratica con la tecnologia;
+    \item Bianca, studentessa di 16 anni, mediamente abile nell'uso della tecnologia;
+    \item Roberta, mamma di 58 anni, poco pratica nell'utilizzo della tecnologia.
+    \item Franco, avvocato di 40 anni, pratico nell'utilizzo della tecnologia.
+  \end{itemize}
+  \textbf{Descrizione dei risultati attesi}: per effettuare una stima dei risultati otteuti sono stati applicati i criteri EEE (Efficacia, Efficienza, Emozioni); per efficacia s'intede l'accuratezza con cui gli utenti riescono a raggiungere determinati obiettivi, l'efficienza misura il tempo minimo richiesto per portare a termine un task in maniera efficace, mentre l'emozione indica il comfort e l'atteggiamento positivo dell'utente nell'utilizzo del sistema.\\
+  Per ognuno di questi criteri si definiscono queste scale:
+  \begin{itemize}
+  \item Efficacia:
+    \begin{itemize}
+    \item Task portato a termine in modo autonomo: \textit{Punteggio 3}
+    \item Tesk portato a termine con aiuto: \textit{Punteggio 2}
+    \item Task abbandonato: \textit{Punteggio 1}
+    \end{itemize}
+  \item Efficienza:
+    \begin{itemize}
+    \item Grado di completamento anche parziale del task dal punto di vista del tempo impiegato. 1 equivale a tempi prolissi, 3 tempi brevi o ragionevoli.
+    \end{itemize}
+  \item Emozione/Soddisfazione
+    \begin{itemize}
+    \item domanda secca su quanto ci si ritiene soddifatti nell'utilizzo del sito complessivamente, risposta data con un valore su una scala da 1 a 7.
+    \end{itemize}
+  \end{itemize}
+\subsection{Analisi di dati soggettivi e oggettivi}
+  \includegraphics[width=1\textwidth]{"Project Management Sources/UsertestingAttesi"}\\\\
+  \includegraphics[width=1\textwidth]{"Project Management Sources/UserTestingReali"}
+  Come visibile dalle tabelle sopra, i risultati reali sono di poco inferiori a quelli attesi, soprattutto per quanto riguarda il task 2 sia delle ragazze che degli adulti, anche se i due task sono differenti. Di seguito invece gli errori commessi da ciascun utente, con un codice che servirà per riproporre l'errore nella curva d'urgenza.
+  \subsubsection{Bianca}
+  Bianca, mediamente abile nell'utilizzo della tecnologia, è stata la prima utente a testare il sistema. Ha evidenziato i seguenti errori:
+  \begin{itemize}
+    \item \textit{Task 1:} Il task è stato portato a termine senza problemi;
+    \item \textit{Task 2:} Il link per trovare un negozio era identificato con il sostantivo "Vieni a trovarci"; ciò risultava ambiguo e non è stato indentificato nell'immediato, così è stato sostituito con "Trova un negozio" accompagnato dalla relativa icona. (\textcolor{red}{E1})
+    \item \textit{Task 3:} Il task è stato portato a termine anche se con qualche difficoltà in quanto l'utente doveva necessariamente aprire i dettagli del prodotto per aggiungere al carrello. (\textcolor{red}{E2})
+  \end{itemize}
+  \subsubsection{Ilaria}
+  Ilaria, abile nell'utilizzo della tecnologia, è stata la seconda utente a testare il sistema. Ha evidenziato i seguenti errori:
+  \begin{itemize}
+    \item \textit{Task 1:} Il task è stato portato a termine senza problemi;
+    \item \textit{Task 2:} Il task è stato portato a termine senza troppe difficoltà. L'utente non ha completato il task nell'immediato poichè non ha considerato di cercare nel footer. (\textcolor{red}{E1})
+    \item \textit{Task 3:} Il task è stato portato a termine senza problemi.
+  \end{itemize}
+  \subsubsection{Roberta}
+  Roberta, non molto abile nell'utilizzo della tecnologia, è stata la terza utente a testare il sistema. Ha evidenziato i seguenti errori:
+  \begin{itemize}
+    \item \textit{Task 1:} Il task è stato portato a termine senza troppi problemi;
+    \item \textit{Task 2:} Il task è non stato portato a termine. L'utente non ha completato il task poichè per effettuare il reso si è recata negli ordini effettuati piuttosto che nell'apposita sezione all'interno del profilo. Così è stato aggiunto il link al reso anche nella sezione degli ordini. (\textcolor{red}{E3})
+    \item \textit{Task 3:} Il task è stato portato a termine con qualche difficoltà in quanto non riusciva a trovare l'apposita sezione in cui completare il task; la sezione si chiamava "Account collegati" ed essendo ambigua è stata cambiata con "Collega account young". (\textcolor{red}{E4})
+  \end{itemize}
+  \subsubsection{Franco}
+  Franco, abile nell'utilizzo della tecnologia, è stato l'ultimo utente a testare il sistema. Ha evidenziato i seguenti errori:
+  \begin{itemize}
+    \item \textit{Task 1:} Il task è stato portato a termine senza problemi;
+    \item \textit{Task 2:} Il task è stato portato a termine senza troppe difficoltà. Però a task completato l'utente ha evidenziato il fatto di non ricevere alcun feedback dal sistema relativo al completamento dell'azione. (\textcolor{red}{E5})
+    \item \textit{Task 3:} Il task è stato portato a termine senza problemi.
+  \end{itemize}
 \chapter{Conclusioni}
 \chapter{Allegati}
 \chapter{Licenza}
