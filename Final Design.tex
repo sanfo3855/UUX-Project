@@ -49,11 +49,16 @@ Il cliente ha anche rimarcato il suo particolare interesse per le tematiche dell
 Plot e Subplot si intrecciano tra loro con obiettivi e prospettivi differenti. La progettazione del sito ha portato alla creazione di sezioni riservate ai soli genitori, dividendo l'utenze in due tipologie di account, una per le ragazze (con meno operazioni possibili) e uno per i genitori (con il totale controllo della fase di pagamento o reso ad esempio).\\
 
 \chapter{Ricerca Etnografica}
-Il sito LittleWomen è stato progettato con lo scopo di fornire una piattaforma di e-commerce per la vendita di prodotti di abbigliamento scarpe e accessori. Il target d'utenza, come concordato con il cliente, risulta abbastanza ristretto, essendo composto da ragazze tra i 13 e i 16 anni (\textit{plot}); si approcciano all'acquisto di prodotti online e tavolta al mondo della moda per la prima volta, tuttavia sono ormai capaci di utilizzare il web in modo autonomo.\\
-Il sito adotta politiche \textit{parent-friendly}, come richiesto dal cliente. Ciò significa che la progettazione ha dovuto tener conto dell'utente genitore, fornendogli i mezzi per fari si che le ragazze siano protette dai pericoli che possono accorrere durante la navigazione e l'acquisto di articoli su siti di e-commerce. \\
-Per soddisfare tale necessità è stata ideata un'apposita sezione per i genitori nella quale hanno il privilegio di compiere determinati task senza i quali l'acquisto non sarebbe portato a termine. Infatti è necessario che l'account della ragazza sia collegato ad un account adulto, ovvero il genitore o chi ne fa le veci. Entrambe le classi di utenti potranno fare acquisti, ma la fase validazione degli acquisti nonchè di pagamento sarà riservata all'utente genitore, che dovrà confermare l'acquisto inserendo di persona i dati di pagamento. Nella pratica, la ragazza quando desidera acquistare un articolo lo aggiungerà al carrello, e nel carrello del relativo account adulto verranno visualizzati i medesimi prodotti. Spetterà poi al genitore accettare o rigettare gli acquisti effettuati dalla ragazza. Da tutto ciò ne deriva un controllo totale dell'utilizzo di una piattaforma di e-commerce da parte di minori.
+Il sito LittleWomen è stato progettato con lo scopo di fornire una piattaforma di e-commerce per la vendita di prodotti di abbigliamento scarpe e accessori. Il target d'utenza, come concordato con il cliente, risulta abbastanza ristretto, essendo composto da ragazze tra i 13 e i 16 anni (\textit{plot}); tali utenti si approcciano all'acquisto di prodotti online e tavolta al mondo della moda per la prima volta, ma tuttavia sono ormai capaci di utilizzare il web in modo autonomo.\\ \\ Il sito adotta politiche \textit{parent-friendly}, come richiesto dal cliente. Ciò significa che la progettazione ha dovuto tener conto dell'utente genitore, fornendogli i mezzi per fari si che le ragazze siano protette dai pericoli che possono accorrere durante la navigazione e l'acquisto di articoli su siti di e-commerce.\\
+Per soddisfare tale necessità è stata ideata un'apposita sezione per i genitori nella quale hanno il privilegio di compiere determinati task senza i quali l'acquisto non sarebbe portato a termine. Infatti è necessario che l'account della ragazza sia collegato ad un account adulto, ovvero il genitore o chi ne fa le veci. \\Entrambe le classi di utenti potranno fare acquisti, ma la fase validazione degli acquisti nonchè di pagamento sarà riservata all'utente genitore, che dovrà confermare l'acquisto inserendo di persona i dati di pagamento. Nella pratica, la ragazza quando desidera acquistare un articolo lo aggiungerà al carrello, e nel carrello del relativo account adulto verranno visualizzati i medesimi prodotti. \\ Spetterà poi al genitore accettare o rigettare gli acquisti effettuati dalla ragazza. Da tutto ciò ne deriva un controllo totale dell'utilizzo di una piattaforma di e-commerce da parte di minori.
 \chapter{Blueprint}
-\chapter{Wireframe}La proposta di design è stata realizzata tramite il software Balsamiq Mockups 3, che consenti di fare uno sketch di una qualsiasi interfaccia. Dopo la definizione della struttura del sito tramite il \textit{blueprint}, in questo capitolo ci concentriamo sulla descrizione più specifica delle singole pagina e delle feature principali.
+Il blueprint è uno schema che permette di descrivere l'organizzazione e la struttura delle varie componenti del sito, e come esse sono connesse tra loro.\\
+Il sito si apre con l'homepage, che consente di raggiungere una molteplicità di sezioni; permette di accedere alla parte di shopping attraverso le categorie o la barra di ricerca, al cui interno sarà possibile filtrare i prodotti. Inoltre in qualsiasi momento è possibile accedere sia alle sezioni relative all'assistenza ed a "trova un negozio" nonchè al profilo, al carrello contenente i prodotti selezionati e alla lista dei preferiti. Le sezioni appena descritte sono le stesse per entrambi i target di utenti, mentre le sezioni del profilo e del carrello si articolano in maniera differente tra l'account young e l'acocunt adulto.\\
+Per l'account delle ragazze, il profilo consente di gestire le informazioni di contatto (credenziali e dati di base) e visualizzare la cronologia degli ordini effettuati. Il profilo degli adulti dispone invece di sezioni aggiuntive, che permettono di associare l'account a quello young, di effettuare i resi e di memorizzare le informazioni di pagamento e di spedizione. Per quanto riguarda invece la sezione \textit{Carrello}, le ragazze hanno solamente la possibilità di aggiungere i prodotti al suo interno anche alla lista dei preferiti, mentre i genitori avranno il privilegio di completare l'acquisto inserendo i dati di spedizione e pagamento.\\
+Infine ogni articolo dispone di una propria pagina, nella quale sono disponibili le informazioni dettagliate relative al prodottoe i comandi per selezionare taglia e colore e aggiungerlo al carrello. Sarà inoltre possibile visualizzare all'interno della stessa pagina una molteplicità di foto di quel prodotto, aggiungerlo alla lista dei desideri e visualizzare prodotti simili.\\\\
+\includegraphics[width=1\textwidth]{"Project Management Sources/Wireframe/Blueprint"}
+\chapter{Wireframe}
+La proposta di design è stata realizzata tramite il software Balsamiq Mockups 3, che consenti di fare uno sketch di una qualsiasi interfaccia. Dopo la definizione della struttura del sito tramite il \textit{blueprint}, in questo capitolo ci concentriamo sulla descrizione più specifica delle singole pagina e delle feature principali.
 \section{Versione Desktop}
 \subsection{Navbar e Footer} Tutte le pagine del sito hanno in comune sia la Navbar in cime, che il Footer in basso.\\
 La Navbar è centrale nella navigazione del sito in quanto raggruppa i principali comandi e shortcut per raggiungere le principali sezioni del sito. Sarà sempre fissata in cima alla pagina anche se si scrolla di molto verso il basso.\\
@@ -90,14 +95,70 @@ Nel footer sono sempre presenti due shortcut a due pagine utili a ricevere infor
 \newpage
 \subsection{Menù di navigazione laterale}
 \begin{wrapfigure}{l}{0.3\textwidth}
-\vspace{-3mm}
   \includegraphics[height=0.5\textheight]{"Images Latex/Immagini Wireframe/Desktop/7 - Dettagli Prodotto"}
+  \vspace{-200pt}
+
 \end{wrapfigure}
 Con il menù di navigazione laterale ci si può facilmente spostare tra le varie categorie cliccando sulla label relativa.\\
 Scendendo in sottocategorie sarà sempre possibile visualizzare le categorie al macrocategorie al di sopra di dove ci si trova e tornare velocemente indietro.\\
+\vspace{180pt}
 \subsection{Dettagli Articolo}
-
+\newpage
 \section{Versione Mobile}
+Considerando la giovane età del target di utenti è stato ritenuto opportuno fornire oltre alla versione desktop una versione mobile, visto l'uso ormai preponderante rispetto alla controparte desktop degli smartphone da parte dei ragazzi di oggi. Di seguito sono fornite e spiegate una serie di schermate di LittleWomen in versione mobile, le cui funzioni sono le medesime della versione desktop, ma la loro disposizione è pensata per fornire una maggior usabilità dovuta anche al fatto della dimensione ridotta degli schermi.
+\newpage
+\subsection{Homepage}
+\begin{wrapfigure}{l}{0.5\textwidth}
+\includegraphics[height=0.50\textheight]{"Project Management Sources/Wireframe/WireFrame Screenshot/Mobile/Homepage"}
+\end{wrapfigure}
+\vspace{5mm}
+L'homepage della versione mobile  così come la versione desktop si presenta con una navbar che racchiude il link ai preferiti, al carrello e alla ricerca. Inoltre sulla sinistra è presente un'icona che permette di visualizzare l'intero menu con le categorie. \\\\Il corpo dell'homepage, così come nella versione desktop si divide in due parti: la parte superiore è riservata alle novità e alle tendenze del momento, mentre la parte inferiore propone le offerte e i capi scontati presenti.\\ Infine nella parte inferiore è presente il footer con informazioni utili relative a social contatti e aiuti.
+\newpage
+\subsection{Menu}
+\begin{wrapfigure}{l}{0.4\textwidth}
+\centering
+\includegraphics[height=0.38\textheight]{"Project Management Sources/Wireframe/WireFrame Screenshot/Mobile/Home menu"}
+\vspace{-30pt}
+\end{wrapfigure}
+\vspace{5mm}
+Si può accedere al menu visibile nell'immagine a fianco dall'icona a sinistra all'interno della navbar presente in tutte le pagine del sito. Al suo interno sono presenti le categorie del sito identiche a quelle della versione desktop, a cui si aggiungono i link al proprio profilo e alla sezione "Trova un negozio". Inoltre è presente una barra di ricerca.\\\\\\\\
+\subsection{Ricerca}
+\begin{wrapfigure}{r}{0.4\textwidth}
+\centering
+\includegraphics[height=0.4\textheight]{"Project Management Sources/Wireframe/WireFrame Screenshot/Mobile/Ricerca"}
+\vspace{-150pt}
+\end{wrapfigure}
+La barra di ricerca che permette di cercare un dato sostantivo all'interno del sito è accedibile sia tramite la navbar posta in alto nel sito, e sia attraverso la barra di ricerca all'interno del menu. Come visibile, durante la scrittura del sostantivo da cercare il sito propone una serie di suggerimenti relativi.
+\newpage
+\subsection{Risultati Ricerca}
+\begin{wrapfigure}{r}{0.4\textwidth}
+\centering
+\includegraphics[height=0.4\textheight]{"Project Management Sources/Wireframe/WireFrame Screenshot/Mobile/Risultati ricerca"}
+\vspace{-100pt}
+\end{wrapfigure}
+Il risultato di una ricerca, ottenuto attraverso l'apposita barra o direttamente dalle categorie presenti, fornirà una schermata con l'insieme dei risultati disposti su due colonne. Cliccando sull'icona o sull'immagine dell'articolo si potrà accedere ai dettagli relativi; in alternatica è possibile aggiungerlo direttamente al carrello oppure ai preferiti con i due bottoni posti sotto la foto dell'articolo. Anche in questa sezione è sempre presente la navbar e il footer del sito.\\
+\subsection{Dettagli articolo}
+\begin{wrapfigure}{l}{0.4\textwidth}
+\centering
+\includegraphics[height=0.4\textheight]{"Project Management Sources/Wireframe/WireFrame Screenshot/Mobile/Dettagli articolo"}
+\end{wrapfigure}
+\vspace{2mm}
+Nella pagine dedicata a ciascun articolo troviamo in primo piano la galleria delle immagini del prodotto, che è possibile scorrere con le apposite frecce. Scorrendo la pagina troviamo la possibilità di selezionare il colore dell'articolo attraverso le icone circolari, nonchè la relativa taglia. Cliccando su "Dettagli articolo" si potranno visualizzare informazioni circa la vestibilità e la qualità dei materiali dei capi d'abbigliamento. Nella parte bassa invece è presente una barra che permette di aggiungere il prodotto selezionato al carrello o ai preferiti. Tale barra rimane sempre fissa nella parte bassa dello smartphone nonostante lo scorrere della pagina.\\
+\newpage
+\subsection{Carrello}
+\begin{wrapfigure}{l}{0.4\textwidth}
+\centering
+\includegraphics[height=0.4\textheight]{"Project Management Sources/Wireframe/WireFrame Screenshot/Mobile/Carrello"}
+\vspace{-50pt}
+\end{wrapfigure}
+Per poter visualizzare il carrello è necessario cliccare sull'apposito bottone posizionato nella barra di navigazione a destra. All'interno del carrello è possibile modificare i dettagli della scelta di ciascun articolo, eliminarlo o aggiungerlo ai preferiti. Nella schermata a fianco è presente il tasto "Procedi al pagamento" il quale è riservato all'account adulto. \\La schermata per l'account young è la medesima mancante però di tale tasto. Infine nella parte bassa vengono riportati i costi di spedizione e la spesa totale dell'acquisto.\\
+\subsection{Collega account}
+\begin{wrapfigure}{l}{0.4\textwidth}
+\centering
+\includegraphics[height=0.4\textheight]{"Project Management Sources/Wireframe/WireFrame Screenshot/Mobile/Dettagli account"}
+\end{wrapfigure}
+La presente schermata è riservata all'account genitore. Permette di associare il proprio account a quello di una ragazza inserendo username email e grado di parentela di quest'ultima. Per associarlo dovrà poi cliccare su collega account. Sarà inoltre possibile visualizzare i vari account connessi nonchè eliminarli.
 \chapter{Conclusioni}
 \chapter{Licenza}
+Quest'opera è distribuita sotto la licenza \textbf{GNU General Public License v3.0}, consultabile al link  \textcolor{blue}{\href{https://www.gnu.org/licenses/gpl-3.0.en.html}{https://www.gnu.org/licenses/gpl-3.0.en.html}}
 \end{document}
